@@ -66,6 +66,13 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    grid-column: 1 / 4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .header {
     color: var(--claro);
     grid-column: 1 / 4;
@@ -235,6 +242,16 @@ body {
     line-height: 1.6rem;
 }
 
+.mas-detalles-box ul li::before {
+    font-family: "Font Awesome 5 Free";
+    color: var(--secundario);
+    font-size: .8rem;
+    content: "\f058";
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 8px;
+}
+
 .clientes {
     grid-column: 1 / 4;
     background-color: var(--back);
@@ -246,9 +263,9 @@ body {
 .contenedor-comentario {
     width: 260px;
     background-color:var(--claro);
-    padding: .6rem;
+    padding: 1rem;
     box-shadow: var(--shadow-md);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .contenido-comentario h3 {
@@ -263,6 +280,7 @@ body {
     color: var(--texto);
     font-weight: 400;
     font-style: italic;
+    line-height: 1.3rem;
 }
 
 .contenido-comentario p span {
@@ -339,7 +357,7 @@ body {
 .img-promo {
     grid-column: 2 / 4;
     padding-left: 7rem;
-    filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.3));
 }
 
 .chat {
