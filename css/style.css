@@ -5,9 +5,9 @@
     --fuente-secundaria: 'Inder', sans-serif;
     --fuente-terciaria: 'Imprima', sans-serif;
 
-    --h2: 18px;
-    --h3: 12px;
-    --p: 12px;
+    --h2: 22px;
+    --h3: 14px;
+    --p: 14px;
 
     /* colores */
     --back: #fef6e4;
@@ -50,13 +50,14 @@ h3 {
 }
 
 body {
+    margin: 0;
     font-family: var(--fuente_primaria);
     background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 113px);
+    grid-template-columns: repeat(auto-fit, 115px);
     grid-gap: 10px;
 }
 
@@ -109,12 +110,12 @@ body {
 }
 
 .colores p {
-    font-size: var(--p);
+    font-size: 14px;
     font-weight: 300;
 }
 
 .colores h3 {
-    font-size: var(--p);
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -124,12 +125,12 @@ body {
 }
 
 .precio p {
-    font-size: var(--p);
+    font-size: 14px;
     font-weight: 300;
 }
 
 .precio h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -146,7 +147,7 @@ body {
 
 .icon-ws {
     max-width: 50px;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .whatsapp p {
@@ -181,11 +182,11 @@ body {
     border-radius: 20px 20px 0 0;
     margin-top: -50px;
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .detalles-wrap h3 {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--oscuro);
 }
@@ -206,22 +207,24 @@ body {
     text-align: center;
     display: block;
     margin: 0 auto;
-    width: 130px;
+    width: 160px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: var(--primario);
-    font-size: 19px;
+    font-size: 22px;
     font-weight: bold;
     letter-spacing: -0.5px;
     margin-bottom: 1.5rem;
 }
 
 .mas-detalles-box {
-    padding-left: 1rem;
+    padding-inline-start: 0!important;
+    margin: 0;
+    padding-left: .2rem;
 }
 
 .mas-detalles-box ul li {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--texto);
     font-weight: bold;
     list-style: none;
@@ -232,36 +235,38 @@ body {
     grid-column: 1 / 4;
     background-color: var(--back);
     margin-top: -20px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     display: grid;
 }
 
 .contenedor-comentario {
-    width: 223px;
+    width: 260px;
     background-color:var(--claro);
     padding: .6rem;
     box-shadow: var(--shadow-md);
     margin-bottom: 20px;
-
 }
 
 .contenido-comentario h3 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--primario);
     padding-bottom: .5rem;
 }
 
 .contenido-comentario p {
-    font-size: 10px;
+    font-size: 14px;
     color: var(--texto);
     font-weight: 400;
+    font-style: italic;
 }
 
 .contenido-comentario p span {
-    font-size: 10px;
+    font-size: 14px;
     color: var(--secundario);
     font-weight: 600;
+    padding-top: .5rem;
+    float: right;
 }
 
 .comentario1 {
@@ -269,7 +274,7 @@ body {
 }
 
 .comentario2 {
-    margin-left: 7rem;
+    margin-left: 4.5rem;
 }
 
 .comentario3 {
@@ -286,7 +291,7 @@ body {
 
 .regalo p {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: var(--primario);
     padding-top: 1rem;
@@ -312,7 +317,7 @@ body {
 .precio-promo {
     grid-row: 2;
     position: absolute;
-    left: 6rem;
+    left: 5rem;
 }
 
 .precio-promo p {
@@ -322,15 +327,15 @@ body {
 }
 
 .precio-promo h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: var(--secundario);
 }
 
 .img-promo {
     grid-column: 2 / 4;
-    padding-left: 6rem;
-    filter: drop-shadow(6px 8px 19px rgba(0, 0, 0, 0.3));
+    padding-left: 7rem;
+    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .chat {
@@ -345,6 +350,7 @@ body {
 
 .icon-chat {
     text-align: center;
+    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .chat-svg {
@@ -353,7 +359,7 @@ body {
 
 .contacto p {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: var(--primario);
 }
