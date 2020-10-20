@@ -195,13 +195,6 @@ body {
     width: 40px;
 }
 
-.mas-detalles {
-    grid-column: 1 / 4;
-    background-color: var(--back);
-    margin-top: -20px;
-    padding-bottom: 80px;
-}
-
 .boton {
     background-color: var(--secundario);
     text-align: center;
@@ -214,13 +207,20 @@ body {
     font-size: 22px;
     font-weight: bold;
     letter-spacing: -0.5px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 40px;
 }
 
-.mas-detalles-box {
-    padding-inline-start: 0!important;
+.mas-detalles {
+    grid-column: 1 / 4;
+    background-color: var(--back);
+    margin-top: -20px;
+    padding-bottom: 80px;
+}
+
+.mas-detalles-box ul {
     margin: 0;
-    padding-left: 0;
+    padding: 0;
+    padding-left: 30px;
 }
 
 .mas-detalles-box ul li {
@@ -228,7 +228,7 @@ body {
     color: var(--texto);
     font-weight: bold;
     list-style: none;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
 }
 
 .clientes {
@@ -317,17 +317,17 @@ body {
 .precio-promo {
     grid-row: 2;
     position: absolute;
-    left: 5rem;
+    left: 4.5rem;
 }
 
 .precio-promo p {
-    font-size: var(--p);
+    font-size: 16;
     font-weight: 300;
     color: var(--secundario);
 }
 
 .precio-promo h3 {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     color: var(--secundario);
 }
@@ -344,7 +344,7 @@ body {
     background-color: var(--claro);
     margin-top: -30px;
     padding-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 120px;
     display: grid;
 }
 
