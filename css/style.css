@@ -214,7 +214,7 @@ body {
     grid-column: 1 / 4;
     background-color: var(--back);
     margin-top: -20px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .mas-detalles-box ul {
@@ -285,7 +285,7 @@ body {
     grid-column: 1 / 4;
     background-color: var(--back);
     margin-top: -20px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     display: grid;
 }
 
