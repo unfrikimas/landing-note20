@@ -1,0 +1,359 @@
+:root {
+
+    /* fuentes */
+    --fuente_primaria: 'Inter', sans-serif;
+    --fuente-secundaria: 'Inder', sans-serif;
+    --fuente-terciaria: 'Imprima', sans-serif;
+
+    --h2: 18px;
+    --h3: 12px;
+    --p: 12px;
+
+    /* colores */
+    --back: #fef6e4;
+    --primario: #001858;
+    --secundario: #f582ae;
+    --texto: #172c66;
+    --claro: #ffffff;
+    --oscuro: #3a3a3a;
+
+    /* decoration */
+    --shadow-md:  0 0.9px 1.5px rgba(0, 0, 0, 0.03), 
+        0 3.1px 5.5px rgba(0, 0, 0, 0.08), 
+        0 14px 25px rgba(0, 0, 0, 0.12); 
+    --shadow-lg:  0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014), 
+        0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038), 
+        0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085), 
+        0 30px 42px -1px rgba(0, 0, 0, 0.15);
+    --shadow-xl:  0 1.5px 2.1px -6px rgba(0, 0, 0, 0.012), 
+        0 3.6px 5.2px -6px rgba(0, 0, 0, 0.035), 
+        0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07), 
+        0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117), 
+        0 46px 60px -6px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    font-family: var(--fuente_primaria);
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 113px);
+    grid-gap: 10px;
+}
+
+.contenedor {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.header {
+    color: var(--claro);
+    grid-column: 1 / 4;
+    line-height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titulo p {
+    font-family: var(--fuente_primaria);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.titulo h1 {
+    font-family: var(--fuente-terciaria);
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.titulo h2 {
+    font-family: var(--fuente-secundaria);
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.sidebar {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--claro);
+    padding-top: 1rem;
+}
+
+.colores {
+    padding-left: 2rem;
+}
+
+.colores p {
+    font-size: var(--p);
+    font-weight: 300;
+}
+
+.colores h3 {
+    font-size: var(--p);
+    text-transform: uppercase;
+}
+
+.precio {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.precio p {
+    font-size: var(--p);
+    font-weight: 300;
+}
+
+.precio h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content {
+    grid-column: 2 / 4;
+
+}
+
+.whatsapp {
+    padding-left: 1rem;
+    padding-top: 1.4rem;
+    filter: drop-shadow(6px 8px 19px rgba(0, 0, 0, 0.3));
+}
+
+.icon-ws {
+    max-width: 50px;
+    margin-left: 1rem;
+}
+
+.whatsapp p {
+    font-size: var(--p);
+    font-weight: 300;
+    color: var(--primario);
+    padding-top: 7px;
+}
+
+.whatsapp a {
+    text-decoration: none;
+}
+
+.img-producto {
+    position: relative;
+    max-width: 223px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    filter: drop-shadow(6px 8px 19px rgba(0, 0, 0, 0.3));
+}
+
+.detalles-wrap {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 113px);
+    grid-gap: 10px;
+    text-align: center;
+    background-color: var(--back);
+    border-radius: 20px 20px 0 0;
+    margin-top: -50px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.detalles-wrap h3 {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--oscuro);
+}
+
+.iconos-svg {
+    width: 40px;
+}
+
+.mas-detalles {
+    grid-column: 1 / 4;
+    background-color: var(--back);
+    margin-top: -20px;
+    padding-bottom: 80px;
+}
+
+.boton {
+    background-color: var(--secundario);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primario);
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.5rem;
+}
+
+.mas-detalles-box {
+    padding-left: 1rem;
+}
+
+.mas-detalles-box ul li {
+    font-size: 12px;
+    color: var(--texto);
+    font-weight: bold;
+    list-style: none;
+    line-height: 1.2rem;
+}
+
+.clientes {
+    grid-column: 1 / 4;
+    background-color: var(--back);
+    margin-top: -20px;
+    padding-bottom: 80px;
+    display: grid;
+}
+
+.contenedor-comentario {
+    width: 223px;
+    background-color:var(--claro);
+    padding: .6rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 20px;
+
+}
+
+.contenido-comentario h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--primario);
+    padding-bottom: .5rem;
+}
+
+.contenido-comentario p {
+    font-size: 10px;
+    color: var(--texto);
+    font-weight: 400;
+}
+
+.contenido-comentario p span {
+    font-size: 10px;
+    color: var(--secundario);
+    font-weight: 600;
+}
+
+.comentario1 {
+    margin-left: 1.5rem;
+}
+
+.comentario2 {
+    margin-left: 7rem;
+}
+
+.comentario3 {
+    margin-left: 1.5rem;
+}
+
+.regalo {
+    grid-column: 1 / 4;
+    background-color: var(--back);
+    margin-top: -20px;
+    padding-bottom: 100px;
+    display: grid;
+}
+
+.regalo p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primario);
+    padding-top: 1rem;
+}
+
+.regalo-svg {
+    width: 126px;
+    display: block;
+    margin: 0 auto;
+}
+
+.promo {
+    grid-column: 1 / 4;
+    background-color: var(--back);
+    margin-top: -20px;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    position: relative;
+    border-radius: 0 0 20px 20px;
+}
+
+.precio-promo {
+    grid-row: 2;
+    position: absolute;
+    left: 6rem;
+}
+
+.precio-promo p {
+    font-size: var(--p);
+    font-weight: 300;
+    color: var(--secundario);
+}
+
+.precio-promo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secundario);
+}
+
+.img-promo {
+    grid-column: 2 / 4;
+    padding-left: 6rem;
+    filter: drop-shadow(6px 8px 19px rgba(0, 0, 0, 0.3));
+}
+
+.chat {
+    grid-column: 1 / 4;
+    grid-row: 9;
+    background-color: var(--claro);
+    margin-top: -30px;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    display: grid;
+}
+
+.icon-chat {
+    text-align: center;
+}
+
+.chat-svg {
+    width: 50px;
+}
+
+.contacto p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primario);
+}
