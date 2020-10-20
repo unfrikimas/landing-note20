@@ -102,7 +102,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     color: var(--claro);
-    padding-top: 1rem;
 }
 
 .colores {
@@ -120,8 +119,8 @@ body {
 }
 
 .precio {
-    padding-top: 1rem;
     padding-left: 2rem;
+    margin-top: -20px;
 }
 
 .precio p {
@@ -136,25 +135,29 @@ body {
 
 .content {
     grid-column: 2 / 4;
-
 }
 
 .whatsapp {
+    position: relative;
     padding-left: 1rem;
     padding-top: 1.4rem;
     filter: drop-shadow(6px 8px 19px rgba(0, 0, 0, 0.3));
 }
 
 .icon-ws {
-    max-width: 50px;
-    margin-left: 1.7rem;
+    position: absolute;
+    top: -30px;
+    max-width: 60px;
+    margin-left: 1.6rem;
+    animation: float 3s ease-out infinite;
 }
 
 .whatsapp p {
+    position: absolute;
     font-size: 16px;
     font-weight: 300;
     color: var(--primario);
-    padding-top: 7px;
+    padding-top: 25px;
 }
 
 .whatsapp a {
@@ -180,7 +183,7 @@ body {
     text-align: center;
     background-color: var(--back);
     border-radius: 20px 20px 0 0;
-    margin-top: -70px;
+    margin-top: -50px;
     padding-top: 120px;
     padding-bottom: 100px;
 }
@@ -189,6 +192,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: var(--oscuro);
+    line-height: 1.2rem;
 }
 
 .iconos-svg {
@@ -228,7 +232,7 @@ body {
     color: var(--texto);
     font-weight: bold;
     list-style: none;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 
 .clientes {
@@ -248,7 +252,7 @@ body {
 }
 
 .contenido-comentario h3 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--primario);
     padding-bottom: .5rem;
@@ -343,7 +347,7 @@ body {
     grid-row: 9;
     background-color: var(--claro);
     margin-top: -30px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     padding-top: 120px;
     display: grid;
 }
@@ -353,13 +357,49 @@ body {
     filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.chat-svg {
-    width: 70px;
-}
-
 .contacto p {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
     color: var(--primario);
+}
+
+.chat-svg  {
+    width: 70px;
+    animation: float 3s ease-out infinite;
+  }
+  
+@keyframes float {
+    50% {
+       transform: translate(0, 20px);
+    }
+}
+
+.shadowFrame {
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 120px;
+}
+
+.shadow {
+    animation: shrink 3s ease-out infinite;
+    transform-origin: center center;
+    ellipse {
+      transform-origin: center center;
+    }
+}
+  
+@keyframes shrink {
+    0% {
+      width: 90%;
+      margin: 0 5%;
+    }
+    50% {
+      width: 60%;
+      margin: 0 18%;
+    }
+    100% {
+      width: 90%;
+      margin: 0 5%;
+    }
 }
