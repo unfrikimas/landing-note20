@@ -157,7 +157,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     color: var(--primario);
-    padding-top: 25px;
+    padding-top: 35px;
 }
 
 .whatsapp a {
@@ -192,7 +192,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: var(--oscuro);
-    line-height: 1.2rem;
+    line-height: 1.3rem;
 }
 
 .iconos-svg {
@@ -204,11 +204,11 @@ body {
     text-align: center;
     display: block;
     margin: 0 auto;
-    width: 160px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: var(--primario);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: -0.5px;
     margin-bottom: 40px;
@@ -295,7 +295,7 @@ body {
 
 .regalo p {
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: var(--primario);
     padding-top: 1rem;
@@ -339,7 +339,7 @@ body {
 .img-promo {
     grid-column: 2 / 4;
     padding-left: 7rem;
-    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.2));
 }
 
 .chat {
@@ -359,7 +359,7 @@ body {
 
 .contacto p {
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     color: var(--primario);
 }
