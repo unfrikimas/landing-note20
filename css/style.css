@@ -70,7 +70,7 @@ body {
     color: var(--claro);
     grid-column: 1 / 4;
     line-height: 38px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
 }
 
@@ -147,11 +147,11 @@ body {
 
 .icon-ws {
     max-width: 50px;
-    margin-left: 1.5rem;
+    margin-left: 1.7rem;
 }
 
 .whatsapp p {
-    font-size: var(--p);
+    font-size: 16px;
     font-weight: 300;
     color: var(--primario);
     padding-top: 7px;
@@ -180,8 +180,8 @@ body {
     text-align: center;
     background-color: var(--back);
     border-radius: 20px 20px 0 0;
-    margin-top: -50px;
-    padding-top: 100px;
+    margin-top: -70px;
+    padding-top: 120px;
     padding-bottom: 100px;
 }
 
@@ -220,7 +220,7 @@ body {
 .mas-detalles-box {
     padding-inline-start: 0!important;
     margin: 0;
-    padding-left: .2rem;
+    padding-left: 0;
 }
 
 .mas-detalles-box ul li {
@@ -354,7 +354,7 @@ body {
 }
 
 .chat-svg {
-    width: 50px;
+    width: 70px;
 }
 
 .contacto p {
